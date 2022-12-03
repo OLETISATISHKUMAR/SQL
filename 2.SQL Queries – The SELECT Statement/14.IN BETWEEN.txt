@@ -1,0 +1,2 @@
+select empno, ename, sal, comm from emp
+where sal between 800 and 1600 and comm is not null;

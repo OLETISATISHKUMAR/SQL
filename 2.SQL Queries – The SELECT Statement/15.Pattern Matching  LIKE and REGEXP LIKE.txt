@@ -1,0 +1,22 @@
+select ename from emp
+where regexp_like(ename,'s$','i')
+order by ename;
+
+select ename from emp
+where regexp_like(ename, '^a|^s','i')
+order by ename;
+
+select ename from emp
+where regexp_like(ename, '^a and s$','i')
+order by ename;
+
+select ename from emp
+where regexp_like(ename, 'c{1}','i')
+order by ename;
+
+select ename from emp
+where regexp_like(ename,'S')
+order by ename;
+
+select empno, ename, sal from emp 
+where ename like '%S%'
